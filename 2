@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int*array;
+    for(int i = 0; i<3; i++){
+        printf("insira um nu:");
+        scanf("%d", array + i);
+    }
+    for(int i = 0; i<3; i++){
+        if(*(array+i)%2==0){
+            printf("%d\n", (array + i));
+        }
+    }
+    printf("%d", (array+1));
+    return 0;
+}
